@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Proyecto1.1</string>
+
+    <!--Strings del menu_bottom-->
+    <string name="item_home">Home</string>
+    <string name="item_perfil">Perfil</string>
+    <string name="item_chats">Chat</string>
+
+    <!--Strings del activity_main-->
+    <string name="tv_titulo">Titulo</string>
+
+    <!--Strings del LOGIN-->
+    <string name="opcionEmail">Continuar con Email</string>
+    <string name="opcionGoogle">Continuar con Google</string>
+
+    <!--Strings del LOGIN-EMAIL-->
+    <string name="txt_login">Login</string>
+    <string name="et_Email">Correo electrónico</string>
+    <string name="et_Password">Contraseña</string>
+    <string name="btn_Ingresar">Ingresar</string>
+    <string name="txt_no_tienes_cuenta">¿No tienes una cuenta?</string>
+    <string name="tv_registrarme">Registrarme</string>
+
+    <!--Strings del REGISTRO-->
+    <string name="txt_registro">Registro</string>
+    <string name="et_Nombres">Nombres</string>
+    <string name="et_R_Password">Repita la contraseña</string>
+    <string name="btn_Registrar">Registrar</string>
+
+    <!--Strings del fragment_perfil-->
+    <string name="btn_Cerrarsesion">Cerrar Sesión</string>
+    
+    <!--Strings de opcionesloginactivity-->
+    <string name="default_web_client_id">1010942898149-rrj8c4gakt81g9d2kfhi2lv9gb1elrj5.apps.googleusercontent.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
