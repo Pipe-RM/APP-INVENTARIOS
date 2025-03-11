@@ -11,7 +11,8 @@
     <RelativeLayout
         android:id="@+id/toolbarRL"
         android:layout_width="match_parent"
-        android:layout_height="55dp">
+        android:layout_height="55dp"
+        android:background="@color/fondo_encabezado">
         
         <TextView
             android:id="@+id/tv_titulo"
@@ -35,20 +36,24 @@
         android:layout_above="@+id/view"
         android:layout_below="@+id/toolbarRL"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-    
+        android:layout_height="match_parent" >
+
+    </FrameLayout>
+
     <View
         android:id="@+id/view"
         android:layout_above="@+id/bottomNV"
         android:background="#ccc"
         android:layout_width="match_parent"
         android:layout_height="1dp"/>
+
     
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNV"
         android:layout_alignParentBottom="true"
         app:menu="@menu/menu_bottom"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:background="@color/fondo_footer"/>
 
 </RelativeLayout>

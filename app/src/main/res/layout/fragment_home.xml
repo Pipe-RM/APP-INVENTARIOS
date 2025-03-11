@@ -6,12 +6,32 @@
     tools:context=".Fragmentos.FragmentHome">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Home"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textSize="25sp"/>
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:padding="8dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:src="@drawable/comal"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"/>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:src="@drawable/uaqui"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:paddingLeft="10dp"/>
+
+    </GridLayout>
+
 
 </FrameLayout>

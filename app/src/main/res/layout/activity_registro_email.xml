@@ -9,7 +9,8 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".RegistroEmailActivity">
+    tools:context=".RegistroEmailActivity"
+    android:background="@color/fondo">
     
     <TextView
         android:text="@string/txt_registro"
@@ -29,7 +30,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/white">
 
         <EditText
             android:id="@+id/et_Nombres"
@@ -43,7 +45,8 @@
     <!--Correo-->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/white">
 
         <EditText
             android:id="@+id/et_Email"
@@ -58,7 +61,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:passwordToggleEnabled="true">
+        app:passwordToggleEnabled="true"
+        android:background="@color/white">
         
         <EditText
             android:id="@+id/et_Password"
@@ -73,7 +77,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:passwordToggleEnabled="true">
+        app:passwordToggleEnabled="true"
+        android:background="@color/white">
         
         <EditText
             android:id="@+id/et_R_Password"
@@ -91,7 +96,8 @@
         android:layout_marginTop="15dp"
         app:cornerRadius="8dp"
         android:layout_width="250dp"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/fondo_btn"/>
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
