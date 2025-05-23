@@ -1,4 +1,4 @@
-package com.example.proyecto11.Fragmentos
+package com.example.proyecto11.fragmentos
 
 import android.content.Context
 import android.content.Intent

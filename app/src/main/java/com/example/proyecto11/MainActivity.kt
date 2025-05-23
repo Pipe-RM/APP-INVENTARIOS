@@ -4,10 +4,10 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import com.example.proyecto11.fragmentos.FragmentChats
-import com.example.proyecto11.Fragmentos.FragmentHome
-import com.example.proyecto11.Fragmentos.FragmentPerfil
 import com.example.proyecto11.databinding.ActivityMainBinding
+import com.example.proyecto11.fragmentos.FragmentChats
+import com.example.proyecto11.fragmentos.FragmentHome
+import com.example.proyecto11.fragmentos.FragmentPerfil
 import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {

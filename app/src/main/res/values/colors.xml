@@ -8,5 +8,9 @@
     <color name="fondo_btn">#0067FF</color>
     <color name="fondo_encabezado">#098BAC</color>
     <color name="fondo_footer">#45B6F7</color>
+    <color name="azul2">#0067FF</color>
+    <color name="fondo_lila">#E6E6FA</color>
+    <color name="boton_azul">#007AFF</color>
+
 
 </resources>
