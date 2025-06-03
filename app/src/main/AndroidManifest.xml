@@ -16,6 +16,21 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".item_comidad"
+            android:exported="false" />
+        <activity
+            android:name=".ScrollAlimentos"
+            android:exported="false" />
+        <activity
+            android:name=".BebidasCategorias"
+            android:exported="false" />
+        <activity
+            android:name=".AlimentosMenu"
+            android:exported="false" />
+        <activity
+            android:name=".AlimentosCategorias"
+            android:exported="false" />
+        <activity
             android:name=".Alimentos"
             android:exported="false" />
         <activity
