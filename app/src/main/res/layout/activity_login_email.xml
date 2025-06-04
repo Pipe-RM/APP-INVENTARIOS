@@ -9,7 +9,7 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="24dp"
-    tools:context=".LoginEmailActivity"
+    tools:context=".Login.LoginEmailActivity"
     android:background="@color/fondo">
 
 

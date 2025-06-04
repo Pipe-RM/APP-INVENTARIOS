@@ -39,4 +39,7 @@
     <string name="desayunos">Desayunos</string>
     <string name="lista_de_alimentos">Lista_de_alimentos</string>
 
+    <!--Strings Para la navegación de pantallas del manú-->
+    <string name="tv_titulo_menu">Menú</string>
+
 </resources>

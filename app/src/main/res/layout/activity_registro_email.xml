@@ -9,7 +9,7 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".RegistroEmailActivity"
+    tools:context=".Login.RegistroEmailActivity"
     android:background="@color/fondo">
 
     <!-- Título -->

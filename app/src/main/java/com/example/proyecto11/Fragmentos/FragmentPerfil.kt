@@ -3,12 +3,11 @@ package com.example.proyecto11.fragmentos
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.proyecto11.OpcionesLoginActivity
-import com.example.proyecto11.R
+import androidx.fragment.app.Fragment
+import com.example.proyecto11.Login.OpcionesLoginActivity
 import com.example.proyecto11.databinding.FragmentPerfilBinding
 import com.google.firebase.auth.FirebaseAuth
 

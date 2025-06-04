@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".OpcionesLoginActivity"
+    tools:context=".Login.OpcionesLoginActivity"
     android:background="@color/fondo">
 
 
