@@ -92,6 +92,7 @@
         android:layout_below="@id/tv_sugerencias"
         android:layout_marginTop="3dp">
 
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -107,18 +108,32 @@
                 android:padding="12dp">
 
                 <!--imagen de la bd-->
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal">
 
                 <ImageView
                     android:layout_width="120dp"
                     android:layout_height="120dp"
-                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/card_gray_scroll"
                     android:src="@drawable/ic_hamburguesa" />
+
+                <ImageView
+                    android:id="@+id/btnAgregar"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_aniadir"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                     />
+                </RelativeLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
                     android:text="Nombre de la comida"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
@@ -127,7 +142,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
                     android:text="Descripción"
                     android:textColor="@android:color/darker_gray"
                     android:textSize="14sp" />

@@ -16,6 +16,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".uaqui.uaquiMain"
+            android:exported="false" />
+        <activity
+            android:name=".item_pedido"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmarPedido"
+            android:exported="false" />
+        <activity
             android:name=".item_comidad"
             android:exported="false" />
         <activity
@@ -29,9 +38,6 @@
             android:exported="false" />
         <activity
             android:name=".MCategoriasAlimentos.AlimentosCategorias"
-            android:exported="false" />
-        <activity
-            android:name=".Alimentos"
             android:exported="false" />
         <activity
             android:name=".Login.RegistroEmailActivity"
