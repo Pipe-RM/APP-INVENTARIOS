@@ -16,16 +16,25 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".uaqui.uaquiMain"
+            android:name=".Recyclers.item_pedido"
             android:exported="false" />
         <activity
-            android:name=".item_pedido"
+            android:name=".CarritoConfirmar"
+            android:exported="false" />
+        <activity
+            android:name=".Recyclers.item_comida_horizontal"
+            android:exported="false" />
+        <activity
+            android:name=".CarritoConfirmacion"
+            android:exported="false" />
+        <activity
+            android:name=".uaqui.uaquiMain"
             android:exported="false" />
         <activity
             android:name=".ConfirmarPedido"
             android:exported="false" />
         <activity
-            android:name=".item_comidad"
+            android:name=".Recyclers.item_comidad"
             android:exported="false" />
         <activity
             android:name=".ScrollAlimentos"
