@@ -2,51 +2,30 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
+        android:usesCleartextTraffic="true"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Proyecto11"
-        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".Recyclers.item_pedido"
+            android:name=".FilaVirtualActivity"
             android:exported="false" />
         <activity
-            android:name=".CarritoConfirmar"
+            android:name=".RegistroEmailActivity"
             android:exported="false" />
         <activity
-            android:name=".Recyclers.item_comida_horizontal"
+            android:name=".LoginEmailActivity"
             android:exported="false" />
         <activity
-            android:name=".Recyclers.item_comidad"
-            android:exported="false" />
-        <activity
-            android:name=".ScrollAlimentos"
-            android:exported="false" />
-        <activity
-            android:name=".MCategoriasAlimentos.BebidasCategorias"
-            android:exported="false" />
-        <activity
-            android:name=".MCategoriasAlimentos.AlimentosMenu"
-            android:exported="false" />
-        <activity
-            android:name=".MCategoriasAlimentos.AlimentosCategorias"
-            android:exported="false" />
-        <activity
-            android:name=".Login.RegistroEmailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Login.LoginEmailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Login.OpcionesLoginActivity"
+            android:name=".OpcionesLoginActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

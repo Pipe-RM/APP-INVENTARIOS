@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,65 +8,48 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Fondo -->
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/toolbarRL"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@drawable/bg1">
-
-        <!-- Barra superior -->
-        <RelativeLayout
-            android:id="@+id/toolbarRL"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginTop="24dp">
-
-            <TextView
-                android:id="@+id/tv_titulo"
-                android:text="Titulo"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:textColor="@android:color/white"
-                android:layout_centerInParent="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-            <View
-                android:layout_alignParentBottom="true"
-                android:background="#ccc"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"/>
-        </RelativeLayout>
-
-        <!-- Fragmento de contenido -->
-        <FrameLayout
-            android:id="@+id/fragmentoFL"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="0dp" />
-
-        <!-- Línea separadora -->
+        android:layout_height="55dp">
+        
+        <TextView
+            android:id="@+id/tv_titulo"
+            android:text="@string/tv_titulo"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
         <View
-            android:id="@+id/view"
-            android:background="#ccc"
-            android:layout_width="match_parent"
-            android:layout_height="1dp" />
-
-        <!--btn de navegacion -->
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/bottomNV"
             android:layout_alignParentBottom="true"
-            android:background="@drawable/barra_menu"
-            android:layout_marginEnd="15dp"
-            android:layout_marginStart="15dp"
-            app:menu="@menu/menu_bottom"
-            app:itemIconTint="@color/white"
-            app:itemTextColor="@color/white"
-            app:itemIconSize="30dp"
-            app:itemRippleColor="@android:color/transparent"
-            app:labelVisibilityMode="unlabeled"/>
-    </LinearLayout>
+            android:background="#ccc"
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </RelativeLayout>
+    
+    <FrameLayout
+        android:id="@+id/fragmentoFL"
+        android:layout_above="@+id/view"
+        android:layout_below="@+id/toolbarRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+    <View
+        android:id="@+id/view"
+        android:layout_above="@+id/bottomNV"
+        android:background="#ccc"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNV"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
 </RelativeLayout>
