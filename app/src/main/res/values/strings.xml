@@ -5,6 +5,9 @@
     <string name="item_home">Home</string>
     <string name="item_perfil">Perfil</string>
     <string name="item_chats">Chat</string>
+    <string name="item_menu">Menu</string>
+    <string name="item_carrito">Carrito</string>
+
 
     <!--Strings del activity_main-->
     <string name="tv_titulo">Titulo</string>

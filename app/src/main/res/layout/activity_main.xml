@@ -54,12 +54,18 @@
 
         <!--btn de navegacion -->
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/bottomNV"
+            android:layout_alignParentBottom="true"
             android:background="@drawable/barra_menu"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            app:menu="@menu/menu_bottom"
             app:itemIconTint="@color/white"
             app:itemTextColor="@color/white"
-            app:menu="@menu/menu_bottom" />
+            app:itemIconSize="30dp"
+            app:itemRippleColor="@android:color/transparent"
+            app:labelVisibilityMode="unlabeled"/>
     </LinearLayout>
 </RelativeLayout>

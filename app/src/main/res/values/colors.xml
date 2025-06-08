@@ -3,6 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="azul">#0F53BF</color>
+    <color name="amber">#FFBF00</color>
 
     <color name="fondo">#00AEEF</color>
     <color name="fondo_btn">#0067FF</color>

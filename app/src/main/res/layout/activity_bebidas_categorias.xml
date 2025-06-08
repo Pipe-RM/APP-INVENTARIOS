@@ -104,6 +104,21 @@ android:background="@drawable/bg2">
 
     </GridLayout>
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomNV2"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/barra_menu"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        app:menu="@menu/menu_second_bottom"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:itemIconSize="30dp"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"/>
+
 <!-- Bottom Navigation // sacado del chat para ver propuesta :))
 <LinearLayout
     android:id="@+id/bottom_nav"
@@ -125,14 +140,14 @@ android:background="@drawable/bg2">
     <ImageView
         android:layout_width="32dp"
         android:layout_height="32dp"
-        android:src="@drawable/ic_cart"
+        android:src="@drawable/ic_carrito"
         android:layout_weight="1"
         android:contentDescription="Carrito" />
 
     <ImageView
         android:layout_width="32dp"
         android:layout_height="32dp"
-        android:src="@drawable/ic_user"
+        android:src="@drawable/ic_carrito"
         android:layout_weight="1"
         android:contentDescription="Perfil" />
 </LinearLayout>

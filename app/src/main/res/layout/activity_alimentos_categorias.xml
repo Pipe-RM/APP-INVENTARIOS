@@ -8,6 +8,14 @@
     tools:context=".MCategoriasAlimentos.AlimentosCategorias"
     android:background="@drawable/bg2">
 
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_atras"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:onClick="flechaHome"/>
+
 
     <!-- Logo principal -->
     <ImageView
@@ -96,5 +104,21 @@
         />
 
     <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomNV2"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/barra_menu"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        app:menu="@menu/menu_second_bottom"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:itemIconSize="30dp"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"/>
+
+
 </RelativeLayout>
 
