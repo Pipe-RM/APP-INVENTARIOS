@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
+import com.example.proyecto11.FilaVirtualActivity
 import com.example.proyecto11.MCategoriasAlimentos.AlimentosCategorias
 import com.example.proyecto11.R
 
@@ -18,12 +19,19 @@ class FragmentHome : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        // Referenciar la imagen en el fragmento
+        // Referencias a las imágenes
         val imageView = view.findViewById<ImageView>(R.id.IVcomal)
+        val secondImageView = view.findViewById<ImageView>(R.id.IVbus)
 
-        // Configurar el clic para abrir la nueva actividad
+        // Click en IVcomal -> AlimentosCategorias
         imageView.setOnClickListener {
             val intent = Intent(requireContext(), AlimentosCategorias::class.java)
+            startActivity(intent)
+        }
+
+        // Click en IVbus -> FilaVirtualActivity
+        secondImageView.setOnClickListener {
+            val intent = Intent(requireContext(), FilaVirtualActivity::class.java)
             startActivity(intent)
         }
 
