@@ -16,12 +16,6 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".uaquiBus"
-            android:exported="false" />
-        <activity
-            android:name=".BarraDeNavegacion"
-            android:exported="false" />
-        <activity
             android:name=".Recyclers.item_pedido"
             android:exported="false" />
         <activity
