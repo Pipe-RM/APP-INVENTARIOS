@@ -15,17 +15,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Proyecto11"
         tools:targetApi="31">
+
+
+        <activity
+            android:name=".ScrollAlimentos"
+            android:exported="false"/>
+        <activity
+            android:name=".CarritoConfirmar"
+            android:exported="false"/>
+        <activity
+            android:name=".MCategoriasAlimentos.BebidasCategorias"
+            android:exported="false"/>
+        <activity
+            android:name=".MCategoriasAlimentos.AlimentosMenu"
+            android:exported="false"/>
+        <activity
+            android:name=".MCategoriasAlimentos.AlimentosCategorias"
+            android:exported="false"/>
         <activity
             android:name=".FilaVirtualActivity"
             android:exported="false" />
         <activity
-            android:name=".RegistroEmailActivity"
+            android:name=".Login.RegistroEmailActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginEmailActivity"
+            android:name=".Login.LoginEmailActivity"
             android:exported="false" />
         <activity
-            android:name=".OpcionesLoginActivity"
+            android:name=".Login.OpcionesLoginActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
