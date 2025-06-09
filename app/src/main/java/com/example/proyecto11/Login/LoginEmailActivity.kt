@@ -1,4 +1,4 @@
-package com.example.proyecto11
+package com.example.proyecto11.Login
 
 import android.app.ProgressDialog
 import android.content.Intent
@@ -7,10 +7,8 @@ import android.util.Patterns
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.proyecto11.MainActivity
 import com.example.proyecto11.databinding.ActivityLoginEmailBinding
-import com.example.proyecto11.databinding.ActivityOpcionesLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 
 class LoginEmailActivity : AppCompatActivity() {

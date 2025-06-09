@@ -1,4 +1,4 @@
-package com.example.proyecto11
+package com.example.proyecto11.Login
 
 import android.app.ProgressDialog
 import android.content.Intent
@@ -7,8 +7,9 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.proyecto11.Constantes
+import com.example.proyecto11.MainActivity
+import com.example.proyecto11.R
 import com.example.proyecto11.databinding.ActivityOpcionesLoginBinding
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient

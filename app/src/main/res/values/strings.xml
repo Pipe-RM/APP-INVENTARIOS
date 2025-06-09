@@ -5,6 +5,9 @@
     <string name="item_home">Home</string>
     <string name="item_perfil">Perfil</string>
     <string name="item_chats">Chat</string>
+    <string name="item_menu">Menu</string>
+    <string name="item_carrito">Carrito</string>
+
 
     <!--Strings del activity_main-->
     <string name="tv_titulo">Titulo</string>
@@ -14,7 +17,7 @@
     <string name="opcionGoogle">Continuar con Google</string>
 
     <!--Strings del LOGIN-EMAIL-->
-    <string name="txt_login">Login</string>
+    <string name="txt_login">INICIO DE SESION</string>
     <string name="et_Email">Correo electrónico</string>
     <string name="et_Password">Contraseña</string>
     <string name="btn_Ingresar">Ingresar</string>
@@ -29,11 +32,17 @@
 
     <!--Strings del fragment_perfil-->
     <string name="btn_Cerrarsesion">Cerrar Sesión</string>
-    
+
     <!--Strings de opcionesloginactivity-->
     <string name="default_web_client_id">1010942898149-rrj8c4gakt81g9d2kfhi2lv9gb1elrj5.apps.googleusercontent.com</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logo_hamburguesa">Logo hamburguesa</string>
+    <string name="desayunos">Desayunos</string>
+    <string name="lista_de_alimentos">Lista_de_alimentos</string>
+
+    <!--Strings Para la navegación de pantallas del manú-->
+    <string name="tv_titulo_menu">Menú</string>
 
 </resources>

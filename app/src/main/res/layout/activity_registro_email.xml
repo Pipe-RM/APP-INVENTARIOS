@@ -9,89 +9,116 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".RegistroEmailActivity">
-    
+    tools:context=".Login.RegistroEmailActivity"
+    android:background="@color/fondo">
+
+    <!-- Título -->
     <TextView
-        android:text="@string/txt_registro"
+        android:text="CREA TU CUENTA"
         android:textAllCaps="true"
-        android:textSize="20sp"
+        android:textSize="24sp"
         android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    
+        android:layout_height="wrap_content" />
+
+    <!-- Imagen ilustrativa -->
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/registro_usuario"
-        android:layout_marginTop="15dp"/>
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/registro_usuario" />
 
-    <!--Nombres-->
+    <!-- Subtítulo -->
+    <TextView
+        android:text="INGRESA TUS DATOS"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- iNPUT: Nombres-->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="none">
 
         <EditText
             android:id="@+id/et_Nombres"
             android:hint="@string/et_Nombres"
             android:inputType="textPersonName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:background="@drawable/cardatos"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!--Correo-->
+    <!-- INPUT :Correo-->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="none">
 
         <EditText
             android:id="@+id/et_Email"
             android:hint="@string/et_Email"
             android:inputType="textEmailAddress"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:background="@drawable/cardatos"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!--Contraseña-->
+    <!-- input: Contraseña-->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:boxBackgroundMode="none"
         app:passwordToggleEnabled="true">
-        
+
         <EditText
             android:id="@+id/et_Password"
             android:hint="@string/et_Password"
             android:inputType="textPassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:background="@drawable/cardatos"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!--Repetir la contraseña-->
+    <!-- INput : Repetir la contraseña-->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:boxBackgroundMode="none"
         app:passwordToggleEnabled="true">
-        
+
         <EditText
             android:id="@+id/et_R_Password"
             android:hint="@string/et_R_Password"
             android:inputType="textPassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:background="@drawable/cardatos"/>
 
     </com.google.android.material.textfield.TextInputLayout>
-    
+
+    <!-- Botón registrar -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_Registrar"
-        android:text="@string/btn_Registrar"
-        android:textAllCaps="true"
-        android:layout_marginTop="15dp"
-        app:cornerRadius="8dp"
+        android:text="CREAR CUENTA"
         android:layout_width="250dp"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/fondo_btn"
+        app:cornerRadius="8dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>

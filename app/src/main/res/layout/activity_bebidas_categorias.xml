@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+tools:context=".MCategoriasAlimentos.BebidasCategorias"
+android:background="@drawable/bg2">
+
+<!-- Logo hamburguesa -->
+<ImageView
+    android:id="@+id/logo"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@drawable/logo"
+    android:layout_marginTop="24dp"
+    android:layout_centerHorizontal="true"
+    android:contentDescription="Logo hamburguesa" />
+
+<!-- Texto MENÚ -->
+<TextView
+    android:id="@+id/tituloMenu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/logo"
+    android:layout_centerHorizontal="true"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="30dp"
+    android:text="MENÚ"
+    android:textSize="20sp"
+    android:gravity="center"
+    android:textColor="#000000"
+    android:background="@drawable/card_mensajes"
+    />
+
+<!-- Grid de Categorías -->
+    <GridLayout
+        android:id="@+id/gridCategorias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tituloMenu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:rowCount="2">
+
+        <!-- Fríos -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/card_mensajes"
+            android:onClick="abrirMenuFrios"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="107dp"
+                android:layout_height="105dp"
+                android:contentDescription="Icono desayuno"
+                android:src="@drawable/ic_frio" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Frios"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Calientes -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/card_mensajes"
+            android:onClick="abrirMenuCalientes"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="107dp"
+                android:layout_height="105dp"
+                android:contentDescription="Icono comida"
+                android:src="@drawable/ic_caliente" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Calientes"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </GridLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomNV2"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/barra_menu"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        app:menu="@menu/menu_second_bottom"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:itemIconSize="30dp"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"/>
+
+<!-- Bottom Navigation // sacado del chat para ver propuesta :))
+<LinearLayout
+    android:id="@+id/bottom_nav"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="#007BFF"
+    android:padding="8dp">
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_home"
+        android:layout_weight="1"
+        android:contentDescription="Inicio" />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_carrito"
+        android:layout_weight="1"
+        android:contentDescription="Carrito" />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_carrito"
+        android:layout_weight="1"
+        android:contentDescription="Perfil" />
+</LinearLayout>
+-->
+</RelativeLayout>
